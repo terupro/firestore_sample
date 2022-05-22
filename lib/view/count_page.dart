@@ -34,11 +34,11 @@ class _CountePageState extends State<CountPage> {
       _counter++;
     });
 
-    Count countData = Count(
+    Count count = Count(
       dateTime: DateTime.now(),
       count: _counter,
     );
-    _countRepository.saveCount(countData);
+    _countRepository.saveCount(count);
   }
 
   @override
